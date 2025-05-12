@@ -9,7 +9,14 @@ const Home = () => {
     getData().then(setData).catch(console.error);
   }, []);
 
-  return <MainView data={data} />;
+  return (
+    <MainView
+      data={data}
+      onRefetch={() => {
+        getData().then(setData).catch(console.error);
+      }}
+    />
+  );
 };
 
 export default Home;
