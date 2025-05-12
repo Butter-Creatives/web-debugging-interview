@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Header } from "../components/Header";
 import { getData } from "../utils/getData";
 import { MainView } from "../views/MainView";
 
@@ -9,7 +10,12 @@ const Home = () => {
     getData().then(setData).catch(console.error);
   }, []);
 
-  return <MainView data={data} />;
+  return (
+    <div>
+      <Header />
+      <MainView data={data} />
+    </div>
+  );
 };
 
 export default Home;

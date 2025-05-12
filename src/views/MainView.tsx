@@ -1,19 +1,21 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Counter } from "../components/Counter";
 import { Data } from "../components/Data";
 
 export const MainView = ({ data }: { data: any }) => {
-  const [count, setCount] = useState(1);
-  useEffect(() => {
-    setCount((prev) => prev + 1);
-  }, [data]);
-
+  const [count, setCount] = useState(0);
   return (
     <div>
       <h1>Debugging Interview Page</h1>
-      <Counter count={count} />
-      <br />
       <Data data={data} />
+      <br />
+      {data && (
+        <Counter
+          count={count}
+          onIncrement={() => setCount(count + 1)}
+          onDecrement={() => setCount(count - 1)}
+        />
+      )}
     </div>
   );
 };

@@ -1,3 +1,5 @@
+import { useRef } from "react";
+
 export interface Data {
   title: string;
   timestamp: Date;
@@ -13,11 +15,15 @@ const formatData = (data: Data) => {
 };
 
 export const Data = ({ data, onRefetch }: DataProps) => {
+  const renderCount = useRef(0);
+  renderCount.current += 1;
+
   if (!data) {
     return <div>Loading data...</div>;
   }
   return (
     <div>
+      <div>Renders: {renderCount.current}</div>
       <div>{formatData(data)}</div>
       <button onClick={onRefetch}>Refetch Data</button>
     </div>
