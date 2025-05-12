@@ -6,7 +6,7 @@ export const MainView = ({ data }: { data: any }) => {
   const [count, setCount] = useState(0);
   return (
     <div>
-      <h1>Debugging Interview Page</h1>
+      <h1>Home</h1>
       <Data data={data} />
       <br />
       {data && (

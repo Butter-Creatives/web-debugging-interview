@@ -3,7 +3,6 @@ import Link from "next/link";
 export const Header = () => {
   return (
     <header>
-      <h1>My App</h1>
       <nav>
         <ul>
           <li>
