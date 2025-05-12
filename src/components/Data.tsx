@@ -5,16 +5,11 @@ export interface Data {
   timestamp: Date;
 }
 
-export interface DataProps {
-  data: Data | null;
-  onRefetch?: () => any;
-}
-
 const formatData = (data: Data) => {
   return `${data.title} at ${data.timestamp}`;
 };
 
-export const Data = ({ data, onRefetch }: DataProps) => {
+export const Data = ({ data }: { data: Data | null }) => {
   const renderCount = useRef(0);
   renderCount.current += 1;
 
@@ -25,7 +20,7 @@ export const Data = ({ data, onRefetch }: DataProps) => {
     <div>
       <div>Renders: {renderCount.current}</div>
       <div>{formatData(data)}</div>
-      <button onClick={onRefetch}>Refetch Data</button>
+      <button onClick={() => {}}>Refetch Data</button>
     </div>
   );
 };

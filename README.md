@@ -4,21 +4,25 @@ This app contains performance and network bugs you should identify and fix.
 
 ## Tasks
 
-1. **React Profiler**
-   - Identify and fix performance issues in `HeavyComponent`.
+1. **Setup Project**
 
-2. **Network Tab**
-   - Diagnose why the `/api/slow-data` request fails.
-   - Fix the fetch code to pass the correct header and handle delays gracefully.
+   - Clone the project and run a local web server
 
-3. **Bonus**
-   - Suggest any improvements to code structure or behavior.
+2. **Fix Data Loading**
 
-## Setup
+   - Identify why data loading in the homepage is stuck and fix it
 
-```bash
-npm install
-npm run dev
-```
+3. **Implement Refetch Data**
 
-Then visit `http://localhost:3000`
+   - Implement the refetch data button
+
+4. **Optimize Renders**
+
+   - Use the counter and identify if we have unecessary re-renders and fix them
+
+5. **About Page**
+
+   - Optimize the loading time of the about page
+
+6. **(BONUS) Stylize**
+   - Stylize the site

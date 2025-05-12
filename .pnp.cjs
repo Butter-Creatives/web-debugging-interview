@@ -27,8 +27,6 @@ const RAW_RUNTIME_STATE =
       [null, {\
         "packageLocation": "./",\
         "packageDependencies": [\
-          ["@types/node", "npm:22.15.17"],\
-          ["@types/react", "npm:19.1.3"],\
           ["next", "virtual:5ff993647e7f6294efc19e9b0ec4402840c5f1110e51b1b35a26c6b8130d882207918b8d4d6c5aff59e57f7b0b39a8426a2780d235217d5189c0dedf9d2631e2#npm:15.0.0"],\
           ["react", "npm:18.2.0"],\
           ["react-dom", "virtual:5ff993647e7f6294efc19e9b0ec4402840c5f1110e51b1b35a26c6b8130d882207918b8d4d6c5aff59e57f7b0b39a8426a2780d235217d5189c0dedf9d2631e2#npm:18.2.0"],\
@@ -327,26 +325,6 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["@types/node", [\
-      ["npm:22.15.17", {\
-        "packageLocation": "../../.yarn/berry/cache/@types-node-npm-22.15.17-432db2f2c8-10c0.zip/node_modules/@types/node/",\
-        "packageDependencies": [\
-          ["@types/node", "npm:22.15.17"],\
-          ["undici-types", "npm:6.21.0"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["@types/react", [\
-      ["npm:19.1.3", {\
-        "packageLocation": "../../.yarn/berry/cache/@types-react-npm-19.1.3-f476dcbc85-10c0.zip/node_modules/@types/react/",\
-        "packageDependencies": [\
-          ["@types/react", "npm:19.1.3"],\
-          ["csstype", "npm:3.1.3"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
     ["busboy", [\
       ["npm:1.6.0", {\
         "packageLocation": "../../.yarn/berry/cache/busboy-npm-1.6.0-ebb5cbb04b-10c0.zip/node_modules/busboy/",\
@@ -412,15 +390,6 @@ const RAW_RUNTIME_STATE =
           ["color-string", "npm:1.9.1"],\
           ["color-name", "npm:1.1.4"],\
           ["simple-swizzle", "npm:0.2.2"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["csstype", [\
-      ["npm:3.1.3", {\
-        "packageLocation": "../../.yarn/berry/cache/csstype-npm-3.1.3-e9a1c85013-10c0.zip/node_modules/csstype/",\
-        "packageDependencies": [\
-          ["csstype", "npm:3.1.3"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -499,7 +468,7 @@ const RAW_RUNTIME_STATE =
           ["@types/babel-plugin-react-compiler", null],\
           ["@types/opentelemetry__api", null],\
           ["@types/playwright__test", null],\
-          ["@types/react", "npm:19.1.3"],\
+          ["@types/react", null],\
           ["@types/react-dom", null],\
           ["@types/sass", null],\
           ["babel-plugin-react-compiler", null],\
@@ -572,7 +541,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/__virtual__/react-dom-virtual-038592920d/3/.yarn/berry/cache/react-dom-npm-18.2.0-dd675bca1c-10c0.zip/node_modules/react-dom/",\
         "packageDependencies": [\
           ["react-dom", "virtual:5ff993647e7f6294efc19e9b0ec4402840c5f1110e51b1b35a26c6b8130d882207918b8d4d6c5aff59e57f7b0b39a8426a2780d235217d5189c0dedf9d2631e2#npm:18.2.0"],\
-          ["@types/react", "npm:19.1.3"],\
+          ["@types/react", null],\
           ["loose-envify", "npm:1.4.0"],\
           ["react", "npm:18.2.0"],\
           ["scheduler", "npm:0.23.2"]\
@@ -677,7 +646,7 @@ const RAW_RUNTIME_STATE =
           ["@babel/core", null],\
           ["@types/babel-plugin-macros", null],\
           ["@types/babel__core", null],\
-          ["@types/react", "npm:19.1.3"],\
+          ["@types/react", null],\
           ["babel-plugin-macros", null],\
           ["client-only", "npm:0.0.1"],\
           ["react", "npm:18.2.0"]\
@@ -711,22 +680,11 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["undici-types", [\
-      ["npm:6.21.0", {\
-        "packageLocation": "../../.yarn/berry/cache/undici-types-npm-6.21.0-eb2b0ed56a-10c0.zip/node_modules/undici-types/",\
-        "packageDependencies": [\
-          ["undici-types", "npm:6.21.0"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
     ["web-debugging-interview", [\
       ["workspace:.", {\
         "packageLocation": "./",\
         "packageDependencies": [\
           ["web-debugging-interview", "workspace:."],\
-          ["@types/node", "npm:22.15.17"],\
-          ["@types/react", "npm:19.1.3"],\
           ["next", "virtual:5ff993647e7f6294efc19e9b0ec4402840c5f1110e51b1b35a26c6b8130d882207918b8d4d6c5aff59e57f7b0b39a8426a2780d235217d5189c0dedf9d2631e2#npm:15.0.0"],\
           ["react", "npm:18.2.0"],\
           ["react-dom", "virtual:5ff993647e7f6294efc19e9b0ec4402840c5f1110e51b1b35a26c6b8130d882207918b8d4d6c5aff59e57f7b0b39a8426a2780d235217d5189c0dedf9d2631e2#npm:18.2.0"],\
