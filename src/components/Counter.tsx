@@ -1,12 +1,10 @@
-export const Counter = ({
-  count,
-  onIncrement,
-  onDecrement,
-}: {
+export interface CounterProps {
   count: number;
   onIncrement: () => any;
   onDecrement: () => any;
-}) => {
+}
+
+export const Counter = ({ count, onIncrement, onDecrement }: CounterProps) => {
   return (
     <div>
       My Counter: {count}

@@ -5,11 +5,15 @@ export interface Data {
   timestamp: Date;
 }
 
+export interface DataProps {
+  data: Data | null;
+}
+
 const formatData = (data: Data) => {
   return `${data.title} at ${data.timestamp}`;
 };
 
-export const Data = ({ data }: { data: Data | null }) => {
+export const Data = ({ data }: DataProps) => {
   const renderCount = useRef(0);
   renderCount.current += 1;
 

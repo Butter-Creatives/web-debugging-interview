@@ -5,6 +5,7 @@ import { MainView } from "../views/MainView";
 
 const Home = () => {
   const [data, setData] = useState(null);
+  const [count, setCount] = useState(0);
 
   useEffect(() => {
     getData().then(setData).catch(console.error);
@@ -13,7 +14,12 @@ const Home = () => {
   return (
     <div>
       <Header />
-      <MainView data={data} />
+      <MainView
+        data={data}
+        count={count}
+        onIncrement={() => setCount(count + 1)}
+        onDecrement={() => setCount(count - 1)}
+      />
     </div>
   );
 };

@@ -1,9 +1,14 @@
-import { useState } from "react";
-import { Counter } from "../components/Counter";
-import { Data } from "../components/Data";
+import { Counter, CounterProps } from "../components/Counter";
+import { Data, DataProps } from "../components/Data";
 
-export const MainView = ({ data }: { data: any }) => {
-  const [count, setCount] = useState(0);
+export type MainViewProps = DataProps & CounterProps;
+
+export const MainView = ({
+  data,
+  count,
+  onDecrement,
+  onIncrement,
+}: MainViewProps) => {
   return (
     <div>
       <h1>Home</h1>
@@ -12,8 +17,8 @@ export const MainView = ({ data }: { data: any }) => {
       {data && (
         <Counter
           count={count}
-          onIncrement={() => setCount(count + 1)}
-          onDecrement={() => setCount(count - 1)}
+          onIncrement={onIncrement}
+          onDecrement={onDecrement}
         />
       )}
     </div>
